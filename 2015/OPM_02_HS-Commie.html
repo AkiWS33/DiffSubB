@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:g="http://base.google.com/ns/1.0" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><head><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/track.js" defer="defer" async="" type="application/javascript"></script><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/in.js" async=""></script><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/all_002.js" async=""></script><title>
+	DiffNow - Compare files online. Powered by ExamDiff Pro.
+</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta id="Description" name="description" content="DiffNow lets you compare text files, documents, binary files, and archives up to 2048KB in size. You can either upload the files you wish to compare or enter their URLs. Results are returned as an interactive HTML report."><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="content-language" content="en"><link rel="icon" href="https://www.diffnow.com/diffnow/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="https://www.diffnow.com/diffnow/favicon.ico" type="image/x-icon"><meta property="og:title" content="DiffNow"><meta property="og:type" content="product"><meta property="og:image" content="images/diffnow.png"><meta property="og:url" content="https://www.diffnow.com"><link rel="stylesheet" type="text/css" media="screen" href="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/diffnow.css">
+
+	<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/plusone.js" async=""></script><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ga.js" async="" type="text/javascript"></script><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/TytbtbWpquetlWuQU3E5Q.js" async="" type="text/javascript"></script><script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/jquery.js"></script>
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/jquery-ui.js"></script>
+
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/libs.js"></script>
+
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/checkout.js"></script>
+
+
+
+
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/diffnow-min-1.js"></script>
+
+	<script type="text/javascript">
+		var serverVars = {
+			maxSize: 2048 * 1024,
+			maxSizePremium: 8192 * 1024,
+			timeoutMs: 30 * 60 * 1000,
+			maxLinesShown: 10000,
+			isPremium: false
+		};
+
+		// initialize DiffNow application
+		var app = new App();
+		$(document).ready(function () {
+			app.init();
+		});
+	</script>
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" media="screen" href="diffnow/styles/ie7.css" />
+	<![endif]-->
+<link href="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/WebResource.css" type="text/css" rel="stylesheet"><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/js" async="" type="text/javascript"></script><style media="screen" type="text/css">.uv-icon{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;-moz-transition:all 300ms;-o-transition:all 300ms;-webkit-transition:all 300ms;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;-moz-transition:opacity 100ms;-o-transition:opacity 100ms;-webkit-transition:opacity 100ms;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:white;position:relative;width:325px;height:325px;-moz-transition:background 200ms;-o-transition:background 200ms;-webkit-transition:background 200ms;transition:background 200ms}.uv-bottom .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;-moz-transition:border-top-color 200ms;-o-transition:border-top-color 200ms;-webkit-transition:border-top-color 200ms;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{-moz-transition:none !important;-webkit-transition:none !important;-o-transition:color 0 ease-in !important;transition:none !important}.uv-fade{opacity:1;-moz-transition:opacity 200ms ease-out;-o-transition:opacity 200ms ease-out;-webkit-transition:opacity 200ms ease-out;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;-moz-transition:all 80ms ease-out;-o-transition:all 80ms ease-out;-webkit-transition:all 80ms ease-out;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%);-ms-transform:scale(0.8) translateY(-15%);-webkit-transform:scale(0.8) translateY(-15%);transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%) translateX(-10%);-ms-transform:scale(0.8) translateY(-15%) translateX(-10%);-webkit-transform:scale(0.8) translateY(-15%) translateX(-10%);transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%) translateX(10%);-ms-transform:scale(0.8) translateY(-15%) translateX(10%);-webkit-transform:scale(0.8) translateY(-15%) translateX(10%);transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%);-ms-transform:scale(0.8) translateY(15%);-webkit-transform:scale(0.8) translateY(15%);transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%) translateX(-10%);-ms-transform:scale(0.8) translateY(15%) translateX(-10%);-webkit-transform:scale(0.8) translateY(15%) translateX(-10%);transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%) translateX(10%);-ms-transform:scale(0.8) translateY(15%) translateX(10%);-webkit-transform:scale(0.8) translateY(15%) translateX(10%);transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%);-ms-transform:scale(0.8) translateX(15%);-webkit-transform:scale(0.8) translateX(15%);transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%) translateY(-10%);-ms-transform:scale(0.8) translateX(15%) translateY(-10%);-webkit-transform:scale(0.8) translateX(15%) translateY(-10%);transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%) translateY(10%);-ms-transform:scale(0.8) translateX(15%) translateY(10%);-webkit-transform:scale(0.8) translateX(15%) translateY(10%);transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%);-ms-transform:scale(0.8) translateX(-15%);-webkit-transform:scale(0.8) translateX(-15%);transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%) translateY(-10%);-ms-transform:scale(0.8) translateX(-15%) translateY(-10%);-webkit-transform:scale(0.8) translateX(-15%) translateY(-10%);transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%) translateY(10%);-ms-transform:scale(0.8) translateX(-15%) translateY(10%);-webkit-transform:scale(0.8) translateX(-15%) translateY(10%);transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{-moz-transform:translateY(100%);-ms-transform:translateY(100%);-webkit-transform:translateY(100%);transform:translateY(100%)}.uv-slide-left.uv-is-hidden{-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-webkit-transform:translateX(-100%);transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{-moz-transform:translateX(100%);-ms-transform:translateX(100%);-webkit-transform:translateX(100%);transform:translateX(100%)}
+</style><style media="print" type="text/css">#uvTab,.uv-tray,.uv-icon,.uv-popover,.uv-bubble{display:none!important}</style><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/button.js" async="" charset="utf-8" type="text/javascript"></script><script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/in.php" async="" type="text/javascript"></script><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script><style type="text/css">#__scrollToTop{font:12px/1em Arial,Helvetica,sans-serif;margin:0;padding:0;position:fixed;display:none;left:92%;top:80%;text-align:center;z-index:999999; width:74px;height:50px;cursor:pointer;opacity:0.5;padding:2px;}#__scrollToTop:hover{opacity:1;}#__scrollToTop span.__scroll__arrow{ position:relative;top:20px;background:none repeat scroll 0 0 #eee;border-style:solid; border-width:1px;border-color:#ccc #ccc #aaa; border-radius:5px;color:#333;font-size:36px;padding:5px 8px 2px;} #__scroll__scroll{height:50px;width:50px;float:left;z-index:100001;position:absolute;} #__scroll__util{font:12px/1em  Arial,Helvetica,sans-serif;text-align:center;height:44px;width:20px;float:right;position:absolute;left:54px;z-index:100000; border-style:solid; border-width:1px;border-color:#ccc #ccc #aaa; border-radius:2px;top:5px;display:none;}#__scroll__util span{display:block;height:18px;padding-top:4px;text-align:center;text-shadow:2px 2px 2px #888;font-size:16px;} #__scroll__util span:hover{background-color: #fc9822;}</style></head>
+	
+<body class="mozilla"><div class="uv-tab uv-slide-left " id="uvTab" style="background: rgb(133, 189, 217) url(&quot;https://widget.uservoice.com/pkg/clients/widget2/tab-left-dark-e89fceb89af232658b40362993385936.png&quot;) no-repeat scroll 50% 0px; border-width: 1px 1px 1px medium; border-style: solid solid solid none; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px 4px 4px 0px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.5); font: bold 14px/1em Arial,sans-serif; position: fixed; left: 0px; top: 50%; z-index: 9999; margin-top: -62px;"><a id="uvTabLabel" style="background-color: transparent; display:block;padding:39px 5px 10px 5px;text-decoration:none;" href="javascript:return%20false;"><img src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/feedback-tab.png" alt="feedback" style="border:0; background-color: transparent; padding:0; margin:0;"></a></div>
+ 
+	<div id="fb-root">
+	</div>
+
+
+	<div id="userbar" class="">
+		<div style="display: block;" id="loggedOutUserBar" class="userBarContent ui-helper-hidden">
+			<div id="loginForm">
+				<span id="loginResponse"></span>
+
+				<label for="login_username">Email:</label>
+				<input id="login_username" name="username" maxlength="75" type="text">
+
+				<label for="login_pswd">Password [<a id="forgotPasswordLink">Forgot?</a>]:</label>
+				<input name="password" id="login_pswd" type="password">
+
+				<a aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="loginButton" title="Login"><span class="ui-button-text">Login</span></a>
+				or
+				<a aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="registerButton" title="Register"><span class="ui-button-text">Register</span></a>
+				[<a id="whyRegisterLink">Why?</a>]
+			</div>
+		</div>
+		<div style="display: none;" id="loggedInUserBar" class="userBarContent ui-helper-hidden">
+			<span class="block">
+				<span id="userDropdownLink" class="userBarButton" href="#" data-dropdown="#userDropdown"></span>
+			</span>
+			<span class="block leftmost">
+				<span id="showReportsLink" class="userBarButton">Saved Reports</span>
+			</span>
+		</div>
+
+		<div style="display: block;" id="goPremiumUserBar" class="userBarContentLeft ui-helper-hidden">
+			<a style="width: 115px; text-align: right; padding-right: 6px;" aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary" id="goPremiumButton" title="Go Premium"><span class="ui-button-icon-primary ui-icon ui-icon-star"></span><span class="ui-button-text">Go Premium</span></a>
+			[<a id="whyPremiumLink">Why?</a>]
+		</div>
+
+	</div>
+
+
+	<div id="adblockBanner" style="">DiffNow is largely supported by advertising income. Please consider adding an exception to AdBlock for diffnow.com, or <a onclick='$("#paypalForm").submit();'>donating</a> to help with server costs.</div>
+
+	<div id="container">
+		<div id="header">
+
+			<div id="logo">
+
+				<a href="https://www.diffnow.com/"><img src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/diffnow.png" alt="DiffNow, a free online file comparison tool"></a>
+			</div>
+			<div style="display: block;" id="adSenseUpper" class="adSense">
+				<script async="" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/adsbygoogle.js"></script>
+				<!-- DiffNow-Upper -->
+				<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4700667168875048" data-ad-slot="5540678217"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<div id="poweredby" class="grey">
+				<a href="http://www.prestosoft.com/edp_examdiffpro.asp?ref=diffnow_header" target="_blank">
+					<img src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/powered_by_examdiff.png">
+				</a>
+			</div>
+		</div>
+
+<form target="_top" style="display: block;" name="form1" method="post" action="/" id="form1" class="ui-helper-hidden" enctype="multipart/form-data">
+<div>
+<input name="AsyncFileUploadControl1_ClientState" id="AsyncFileUploadControl1_ClientState" value="" type="hidden">
+<input name="AsyncFileUploadControl2_ClientState" id="AsyncFileUploadControl2_ClientState" value="" type="hidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0NDQwNTQ3NTVkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBRdBc3luY0ZpbGVVcGxvYWRDb250cm9sMQUXQXN5bmNGaWxlVXBsb2FkQ29udHJvbDJ21WDJoMaJPJVUMb6bePJpEaRGYYjBJcDvOwL0NNznwQ==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource_002.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource.js" type="text/javascript"></script>
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource_002.axd" type="text/javascript"></script>
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource_005.axd" type="text/javascript"></script>
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource_004.axd" type="text/javascript"></script>
+<script src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/ScriptResource_003.axd" type="text/javascript"></script>
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="08BC615E" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAP4gP0x6pux6HQ7RXny9rBQ2fO2b/pu/BQCp0oG2IVrxM/+Acap8LTn6OfVWpsa2s+uQGE1jKHQxJcPXJNtE+yR9UOvqfMscVdyretEPifucQ==" type="hidden">
+</div>
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdatePanel1',''], [], [], 90, '');
+//]]>
+</script>
+
+			<div id="UpdatePanel1">
+	
+					<div id="viewReportToolbar" class="toolbar alignCenter ui-buttonset" style="display: none;">
+							<a aria-disabled="false" role="button" id="newComparisonButton" class="button-adjustable ui-button ui-widget ui-state-default ui-button-text-icon-primary ui-corner-left"><span class="ui-button-icon-primary ui-icon icon-opt-compare"></span><span class="ui-button-text">New Comparison</span></a>
+							<a style="display: inline-block;" aria-disabled="false" role="button" class="downloadButton button-adjustable ui-button ui-widget ui-state-default ui-button-text-icon-primary"><span class="ui-button-icon-primary ui-icon icon-download"></span><span class="ui-button-text">Download</span></a>
+							<a style="display: inline-block;" aria-disabled="false" role="button" class="fullscreenButton button-adjustable ui-button ui-widget ui-state-default ui-button-text-icon-primary ui-corner-right"><span class="ui-button-icon-primary ui-icon icon-fullscreen"></span><span class="ui-button-text">Fullscreen</span></a>
+						
+					</div>
+
+					<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabsCompare">
+						<div id="toolbar">
+							<span id="reportToolbar" class="toolbar ui-buttonset">
+								<a title="" style="display: inline-block;" aria-disabled="false" role="button" class="fullscreenButton ui-button ui-widget ui-state-default ui-corner-left ui-button-icon-only"><span class="ui-button-icon-primary ui-icon icon-fullscreen"></span><span class="ui-button-text">Fullscreen</span></a>
+								<a title="" style="display: inline-block;" aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-button-icon-only" id="shareButton"><span class="ui-button-icon-primary ui-icon icon-share"></span><span class="ui-button-text">Share</span></a>
+								<a title="" style="display: inline-block;" aria-disabled="false" role="button" class="downloadButton ui-button ui-widget ui-state-default ui-corner-right ui-button-icon-only"><span class="ui-button-icon-primary ui-icon icon-download"></span><span class="ui-button-text">Download</span></a>
+							</span>
+							<span id="optionsToolbar" class="toolbar ui-buttonset">
+								<a title="" aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-icon-only" id="optionsButton"><span class="ui-button-icon-primary ui-icon icon-options"></span><span class="ui-button-text">Options</span></a>
+								<a title="" aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-right ui-button-icon-only" id="aboutButton"><span class="ui-button-icon-primary ui-icon icon-about"></span><span class="ui-button-text">About</span></a>
+							</span>
+						</div>
+
+						<ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+							<li aria-selected="false" aria-labelledby="ui-id-1" aria-controls="tabs-text" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-text">Text Input</a></li>
+							<li aria-selected="true" aria-labelledby="ui-id-2" aria-controls="tabs-files" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-files">File Upload</a></li>
+							<li aria-selected="false" aria-labelledby="ui-id-3" aria-controls="tabs-urls" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-urls">URLs</a></li>
+							<li aria-selected="false" aria-labelledby="ui-id-4" aria-controls="tabs-samples" tabindex="-1" role="tab" class="ui-state-default ui-corner-top blueTab"><a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-samples">Samples</a></li>
+						</ul>
+
+						<div style="display: none;" aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-id-1" id="tabs-text" class="inputPane ui-tabs-panel ui-widget-content ui-corner-bottom">
+							<div class="fragment">
+								<input id="title1" class="fragmentHeader" value="[Text Fragment 1]" type="text">
+								<textarea id="clip1" class="textInput"></textarea>
+								<div class="resetButtonContainer">
+									<a class="resetButton hidden">reset</a>
+								</div>
+							</div>
+
+							<div class="fragment floatRight">
+								<input id="title2" class="fragmentHeader floatRight" value="[Text Fragment 2]" type="text">
+								<textarea id="clip2" class="textInput floatRight"></textarea>
+								<div class="resetButtonContainer floatRight">
+									<a class="resetButton hidden">reset</a>
+								</div>
+							</div>
+
+							<div class="label grey">
+								2048 KB limit (8192 KB for premium users)
+							</div>
+
+							<div id="doctype">
+								Document type:
+								<select id="clipType">
+									<option selected="selected" value="">(Plain text)</option>
+									<option value="bas">Basic / Visual Basic</option>
+									<option value="bat">Batch</option>
+									<option value="c">C / C++</option>
+									<option value="cs">C#</option>
+									<option value="css">CSS</option>
+									<option value="for">Fortran</option>
+									<option value="html">HTML</option>
+									<option value="java">Java</option>
+									<option value="js">JavaScript</option>
+									<option value="json">JSON</option>
+									<option value="lisp">Lisp / Common Lisp</option>
+									<option value="pas">Pascal / Delphi</option>
+									<option value="perl">Perl</option>
+									<option value="php">PHP</option>
+									<option value="py">Python</option>
+									<option value="rb">Ruby</option>
+									<option value="sql">SQL / MySQL</option>
+									<option value="tcl">TCL</option>
+									<option value="tex">TeX / LaTeX</option>
+									<option value="xml">XML</option>
+								</select>
+							</div>
+
+							<div class="submit">
+								<a aria-disabled="true" role="button" id="compareButtonText" class="compareButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-button-disabled ui-state-disabled" action="compareClips"><span class="ui-button-icon-primary ui-icon icon-compare"></span><span class="ui-button-text">Compare</span></a>
+							</div>
+						</div>
+
+						<div aria-hidden="false" aria-expanded="true" style="display: block;" role="tabpanel" aria-labelledby="ui-id-2" id="tabs-files" class="inputPane ui-tabs-panel ui-widget-content ui-corner-bottom">
+							<table width="100%">
+								<tbody><tr>
+									<td class="descColumn">First file</td>
+									<td>
+										<div id="AsyncFileUploadControl1" class="uploadControl">
+		<input value="[HorribleSubs] One-Punch Man - 02 [720p]_track3_eng.ass" name="AsyncFileUploadControl1$ctl00" id="AsyncFileUploadControl1_ctl00" type="hidden"><div id="AsyncFileUploadControl1_ctl01"><input class="default" size="96" name="AsyncFileUploadControl1$ctl02" id="AsyncFileUploadControl1_ctl02" style="width: 100%; background-color: rgb(192, 255, 176);" type="file"></div>
+	</div>
+									</td>
+									<td class="throbber"><span class="" id="Throbber1" style="display: none;">
+										<img visible="false" alt="Uploading first file to compare" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/uploading.gif"></span>
+									</td>
+								</tr>
+								<tr>
+									<td class="descColumn">Second file</td>
+									<td>
+										<div id="AsyncFileUploadControl2" class="uploadControl">
+		<input value="[Commie] One-Punch Man - 02 [2166BEE3]_track3_und.ass" name="AsyncFileUploadControl2$ctl00" id="AsyncFileUploadControl2_ctl00" type="hidden"><div id="AsyncFileUploadControl2_ctl01"><input class="default" size="96" name="AsyncFileUploadControl2$ctl02" id="AsyncFileUploadControl2_ctl02" style="width: 100%; background-color: rgb(192, 255, 176);" type="file"></div>
+	</div>
+									</td>
+									<td class="throbber"><span class="" id="Throbber2" style="display: none;">
+										<img visible="false" alt="Uploading second file to compare" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/uploading.gif"></span>
+									</td>
+								</tr>
+							</tbody></table>
+
+							<div class="label grey">
+								2048 KB limit (8192 KB for premium users)
+							</div>
+
+							<div class="submit">
+								<a aria-disabled="true" role="button" id="compareButtonFiles" class="compareButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-button-disabled ui-state-disabled" action="compareFiles"><span class="ui-button-icon-primary ui-icon icon-compare"></span><span class="ui-button-text">Compare</span></a>
+							</div>
+						</div>
+
+						<div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-3" id="tabs-urls" class="inputPane ui-tabs-panel ui-widget-content ui-corner-bottom">
+							<table width="100%">
+								<tbody><tr>
+									<td class="descColumn">First URL</td>
+									<td><input autocomplete="off" class="urlField ui-autocomplete-input" id="url1" type="text"><span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span></td>
+								</tr>
+								<tr>
+									<td class="descColumn">Second URL</td>
+									<td><input autocomplete="off" class="urlField ui-autocomplete-input" id="url2" type="text"><span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span></td>
+								</tr>
+							</tbody></table>
+
+							<div class="label grey">
+								First 2048 KB will be compared (8192 KB for premium users)
+							</div>
+
+							<div class="submit">
+								<a aria-disabled="true" role="button" id="compareButtonUrls" class="compareButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-button-disabled ui-state-disabled" action="compareUrls"><span class="ui-button-icon-primary ui-icon icon-compare"></span><span class="ui-button-text">Compare</span></a>
+						   </div>
+						</div>
+
+						<div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-4" id="tabs-samples" class="inputPane ui-tabs-panel ui-widget-content ui-corner-bottom">
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.txt&amp;url2=https://www.diffnow.com/demo/2.txt"><span class="ui-button-text">
+							Plain text</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.doc&amp;url2=https://www.diffnow.com/demo/2.doc"><span class="ui-button-text">
+							Word documents</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.pdf&amp;url2=https://www.diffnow.com/demo/2.pdf"><span class="ui-button-text">
+							PDF documents</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.html&amp;url2=https://www.diffnow.com/demo/2.html"><span class="ui-button-text">
+							HTML</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/lightbox1.js&amp;url2=https://www.diffnow.com/demo/lightbox2.js"><span class="ui-button-text">
+							JavaScript</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.bin&amp;url2=https://www.diffnow.com/demo/2.bin"><span class="ui-button-text">
+							Binary files</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/1.zip&amp;url2=https://www.diffnow.com/demo/2.zip"><span class="ui-button-text">
+							ZIP archives</span></a>
+							<a aria-disabled="false" role="button" class="sampleButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="https://www.diffnow.com/?url1=https://www.diffnow.com/demo/unicode1.txt&amp;url2=https://www.diffnow.com/demo/unicode2.txt"><span class="ui-button-text">
+							Unicode</span></a>
+							<div id="features">
+								<h3>What else can I do with DiffNow?</h3>
+								<p>DiffNow also lets you compare:
+									</p><ul>
+										<li>Microsoft Office documents (doc, docx, xls, xlsx, ppt, pptx)</li>
+										<li>Source code in C, C++, C#, Java, Perl, PHP, and other languages</li>
+										<li>RAR, 7-zip and other archive formats</li>
+									</ul>
+								<p></p>
+							</div>
+						</div>
+					</div>
+
+					<div style="display: none;" id="statusInfo" class="status ui-widget ui-state-highlight ui-corner-all">
+						<div class="statusBox">
+							<div class="statusBoxText">
+								<span class="ui-icon ui-icon-info"></span>
+								<span class="statusText">Files compared successfully. Displaying comparison results...</span>
+							</div>
+							<a style="display: none;" aria-disabled="false" role="button" id="tipCloseButton" class="statusCloseButton ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" title="Hide"><span class="ui-button-icon-primary ui-icon ui-icon-close"></span><span class="ui-button-text">Hide</span></a>
+						</div>
+					</div>
+
+					<div style="display: none;" id="statusError" class="status ui-widget ui-state-error ui-corner-all ui-helper-hidden">
+						<div class="statusBox">
+							<div class="statusBoxText">
+								<span class="ui-icon ui-icon-info"></span>
+								<span class="statusText">Files compared successfully. Displaying comparison results...</span>
+							</div>
+							<a style="display: none;" aria-disabled="false" role="button" id="warningCloseButton" class="statusCloseButton ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" title="Hide"><span class="ui-button-icon-primary ui-icon ui-icon-close"></span><span class="ui-button-text">Hide</span></a>
+						</div>
+					</div>
+
+					<div style="display: block;" id="resultsFrameContainer" class="ui-helper-hidden"><iframe style="display: inline;" id="resultsFrame" class="ui-helper-hidden ready" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/__edp_output__6f50e6ea-6194-421b-b06e-55334704ea6f.htm" onload="app.comparison.onLoadResults('normal')" scrolling="no" frameborder="0">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe></div>
+					<div id="processingFrameContainer" class="ui-helper-hidden"></div>
+				
+<div aria-labelledby="ui-id-9" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-9">Options</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogOptions" class="dialog ui-dialog-content ui-widget-content">
+			<div class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-vertical ui-helper-clearfix" id="tabsOptions">
+				<ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+					<li aria-selected="true" aria-labelledby="ui-id-11" aria-controls="tabsOptions-compare" tabindex="0" role="tab" class="ui-state-default ui-tabs-active ui-state-active ui-corner-left"><a id="ui-id-11" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabsOptions-compare"><span class="ui-icon icon-opt-compare"></span> <span>
+						Compare</span></a></li>
+					<li aria-selected="false" aria-labelledby="ui-id-12" aria-controls="tabsOptions-results" tabindex="-1" role="tab" class="ui-state-default ui-corner-left"><a id="ui-id-12" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabsOptions-results"><span class="ui-icon icon-opt-results"></span> <span>
+						Results</span></a></li>
+					<li aria-selected="false" aria-labelledby="ui-id-13" aria-controls="tabsOptions-colors" tabindex="-1" role="tab" class="ui-state-default ui-corner-left"><a id="ui-id-13" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabsOptions-colors"><span class="ui-icon icon-opt-colors"></span>
+						Colors</a></li>
+				</ul>
+
+				<iframe id="remember" name="remember" style="display: none" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/a_002.htm"></iframe>
+
+				<form id="rememberForm" target="remember" method="post" action="about:blank">
+					<div aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-11" id="tabsOptions-compare">
+						<fieldset>
+							<legend>Ignore</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreCase" type="checkbox"> <span class="label">Case</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreLinebreakStyles" checked="checked" type="checkbox"> <span class="label">
+									Linebreak styles</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreComments" type="checkbox"> <span class="label">Comments</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore white space in lines</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceAll" checked="checked" type="checkbox"> <span class="label">
+									All</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceLeading" type="checkbox"> <span class="label">
+									Leading</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceTrailing" type="checkbox"> <span class="label">
+									Trailing</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceChanges" type="checkbox"> <span class="label">
+									Changes in amount</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore lines</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreAllBlankLines" checked="checked" type="checkbox"> <span class="label">
+									All blank lines</span>
+								</div>
+								<div class="checkbox" style="width:300px;">
+									<input disabled="disabled" id="optIgnoreBlankEnd" type="checkbox"> <span class="label">
+									Blank lines at the end of a file</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Lines matching regular expression</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<input disabled="disabled" id="optIgnoreLinesMatching" class="ignoreOptionsBox regExp" autocomplete="on" type="text"> 
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Line ranges</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip" style="width: 300px">Use a 
+comma-separated list of inclusive ranges, each of which is either a 
+number or a pair of dash-separated numbers. Numbers in square brackets 
+count from the end of the file. Examples: 1-6 or 1-6,12,20-[6],[1].</span>
+									<input disabled="disabled" id="optIgnoreLineRanges" class="ignoreOptionsBox range" type="text">
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div id="ignoreLinesStatus" class="checkbox long regExpStatus">
+									<span class="regExpStatusText"></span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore parts of each line</legend>
+							<div class="checkboxes">
+								<div class="checkbox long">
+									<span class="label">Parts matching regular expression</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<input disabled="disabled" id="optIgnorePartsMatching" class="ignoreOptionsBox regExp" type="text"> 
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Column ranges</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip" style="width: 300px; margin-top: -50px">Use
+ a comma-separated list of ranges, following the rules for defining 
+ranges of ignored lines above. Numbers in square brackets count from the
+ end of the line. Examples: 1-6 or 1-6,12,20-[6],[1].</span>
+									<input disabled="disabled" id="optIgnoreColumnRanges" class="ignoreOptionsBox range" type="text">
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div id="ignorePartsStatus" class="checkbox long regExpStatus">
+									<span class="regExpStatusText"></span>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-12" id="tabsOptions-results">
+						<fieldset>
+							<legend>Results</legend>
+							<div class="checkboxes">
+								<div class="checkbox long">
+									<input id="optHorzSplit" type="checkbox"> <span class="label">Split results horizontally</span>
+								</div>
+								<div class="checkbox long">
+									<input id="optShowOnlyDiffs" type="checkbox"> <span class="label">Show only differences</span>
+								</div>
+								<div class="checkbox long">
+									<input id="optShowLineInspector" checked="checked" type="checkbox"> <span class="label">Show line inspector</span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Line Count Limit (0 for unlimited)</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>&nbsp;
+									<input disabled="disabled" id="optLineCountLimit" value="10000" type="text">
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip">This feature helps limit diff report 
+sizes, as most modern browsers cannot handle incredibly large reports. 
+Note that you can drastically reduce report size by selecting 'Show only
+ differences' on this page.</span>
+									<img class="tooltip-error line-count-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Word Wrap</legend>
+							<div class="checkboxes">
+								<div class="checkbox wordwrap">
+									<input disabled="disabled" id="optEnableWordWrap" type="checkbox"> <span class="label">Enable Word Wrap</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+								</div>
+								<div class="checkbox wordwrap">
+									<span class="label">Wrap Width</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>&nbsp;
+									<input disabled="disabled" id="optWordWrapWidth" value="80" type="text">
+									<img class="tooltip-error word-wrap-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-13" id="tabsOptions-colors">
+						<table id="colorsTable">
+							<tbody><tr>
+								<td></td>
+								<td class="heading">Text color</td>
+								<td class="heading">Background color</td>
+								<td class="heading underline">Underline</td>
+								<td class="heading strikethrough">Strikethrough</td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For file and archive comparison</td>
+							</tr>
+							<tr id="identicalItems">
+								<td class="label">Identical items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(255, 255, 255); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="addedItems">
+								<td class="label">Added items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(128, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(192, 192, 192); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="deletedItems">
+								<td class="label">Deleted items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 0, 255); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(224, 224, 224); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="changedItems">
+								<td class="label">Changed items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(64, 32, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(242, 242, 198); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For file comparison only</td>
+							</tr>
+							<tr id="changedTextInChangedLines">
+								<td class="label">Changed text in changed lines:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(255, 15, 135); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(224, 224, 224); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="ignoredText">
+								<td class="label">Ignored text:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 128, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(240, 240, 240); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For archive comparison only</td>
+							</tr>
+							<tr id="newerItems">
+								<td class="label">Newer items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(128, 0, 128); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(166, 202, 240); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="olderItems">
+								<td class="label">Older items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(255, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(192, 220, 192); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+						</tbody></table>
+					</div>
+					<button id="rememberButton" type="submit" style="display: none"></button>
+				</form>
+			</div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix fixedWidthButtons"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">OK</span></button><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Cancel</span></button><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Reset All</span></button></div><div class="buttonText">Your options will be saved between sessions if you are logged in.</div><div class="premiumFeature buttonText">* This feature is only available for premium users.</div></div></div></div>
+		
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.AsyncFileUpload, {"clientStateField":$get("AsyncFileUploadControl1_ClientState"),"completeBackColor":"#C0FFB0","errorBackColor":"#FFC3B0","formName":"form1","hiddenField":$get("AsyncFileUploadControl1_ctl00"),"inputFile":$get("AsyncFileUploadControl1_ctl02"),"postBackUrl":"/","throbber":$get("Throbber1"),"uploadingBackColor":"#FBF9EE"}, {"uploadError":app.inputFrame.firstFile.uploadError,"uploadStarted":app.inputFrame.firstFile.uploadStarted}, null, $get("AsyncFileUploadControl1"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.AsyncFileUpload, {"clientStateField":$get("AsyncFileUploadControl2_ClientState"),"completeBackColor":"#C0FFB0","errorBackColor":"#FFC3B0","formName":"form1","hiddenField":$get("AsyncFileUploadControl2_ctl00"),"inputFile":$get("AsyncFileUploadControl2_ctl02"),"postBackUrl":"/","throbber":$get("Throbber2"),"uploadingBackColor":"#FBF9EE"}, {"uploadError":app.inputFrame.secondFile.uploadError,"uploadStarted":app.inputFrame.secondFile.uploadStarted}, null, $get("AsyncFileUploadControl2"));
+});
+//]]>
+</script>
+</form>
+
+		<div style="display: none;" id="pageLoader">
+			<img src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/loading.gif" alt="Loading...">
+		</div>
+
+
+		<div id="copyright" class="grey small">
+			Copyright © 2011-2015 <a href="http://www.prestosoft.com/" target="_blank">
+			PrestoSoft LLC</a>. All rights reserved.
+			<a id="termsOfServiceLink">Terms of Service</a>.
+			<a id="feedbackOpenLink">Contact us</a>.
+		</div>
+
+		<div id="commentFormContainer" class="ui-helper-hidden ui-dialog ui-widget ui-widget-content ui-corner-all">
+			<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+				<span class="ui-dialog-title" id="ui-dialog-title-dialogAbout"><h1>Contact Us</h1></span>
+				<a id="feedbackCloseButton" class="ui-dialog-titlebar-close ui-corner-all" role="button">
+					<span class="ui-icon ui-icon-closethick">close</span>
+				</a>
+			</div>
+			<form id="commentForm" class="cmxform" method="post" action="">
+				<fieldset>
+					<p>
+						<label for="cname">Name</label>
+						<em>*</em>
+						<input id="cname" name="name" class="required">
+					</p>
+					<p>
+						<label for="cemail">Email address</label>
+						<em>*</em>
+						<input id="cemail" name="email" class="required email">
+					</p>
+					<p>
+						<label for="csubject">Subject</label>
+						<em>*</em>
+						<input id="csubject" name="subject" class="required">
+					</p>
+					<p>
+						<label for="cmessage">Message</label>
+						<em>*</em>
+						<textarea id="cmessage" name="message" class="required"></textarea>
+					</p>
+					<p>
+						<label for="curl">How did you find out about DiffNow?</label>
+						<em style="visibility: hidden;">*</em>
+						<input id="cfindout" name="findout">
+					</p>
+					<p>
+						<a aria-disabled="false" role="button" id="feedbackSubmitButton" class="submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text">Submit</span></a>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+
+		<div style="display: block;" id="share" class="ui-helper-hidden"><ul><li style="margin-top: -1px; margin-right: 10px;"><form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" value="_s-xclick" type="hidden"><input name="hosted_button_id" value="TT2NF5AFRQRJW" type="hidden"><input src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" border="0" type="image"><img alt="" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/pixel.gif" height="1" border="0" width="1"></form></li><li style="margin-top: -1px;"><g:plusone href="https://www.diffnow.com" size="medium" count="true"></g:plusone></li><li style="margin-top: -1px; overflow:hidden !important;"><script type="in/share" data-url="https://www.diffnow.com" data-counter="right"></script></li><li style="margin-top: -1px;"><a data-twitter-extracted-i1444702209015184365="true" href="https://twitter.com/share" class="twitter-share-button twitter-share-button-error" data-url="https://www.diffnow.com" data-count="horizontal">Tweet</a></li><li style="margin-top: -1px; float: right; display: inline; width: 140px;"><fb:like href="https://www.diffnow.com" layout="button_count" send="true" show_faces="false" width="80" class="fb_edge_widget_with_comment fb_iframe_widget"></fb:like></li></ul></div>
+
+		<div id="adSenseLower" class="adSense">
+			<script async="" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/adsbygoogle.js"></script>
+			<!-- DiffNow 728x90 -->
+			<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4700667168875048" data-ad-slot="5797019810"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+
+	<div id="dialogs" class="ui-helper-hidden">
+		
+
+		
+
+		
+		<div id="savedOptions" class="ui-helper-hidden"></div>
+		<div id="defaultOptions" class="ui-helper-hidden"><div id="tabsOptions">
+				<ul>
+					<li class="ui-corner-left"><a href="#tabsOptions-compare"><span class="ui-icon icon-opt-compare"></span> <span>
+						Compare</span></a></li>
+					<li class="ui-corner-left"><a href="#tabsOptions-results"><span class="ui-icon icon-opt-results"></span> <span>
+						Results</span></a></li>
+					<li class="ui-corner-left"><a href="#tabsOptions-colors"><span class="ui-icon icon-opt-colors"></span>
+						Colors</a></li>
+				</ul>
+
+				<iframe id="remember" name="remember" style="display: none" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/a_002.htm"></iframe>
+
+				<form id="rememberForm" target="remember" method="post" action="about:blank">
+					<div id="tabsOptions-compare">
+						<fieldset>
+							<legend>Ignore</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreCase" type="checkbox"> <span class="label">Case</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreLinebreakStyles" checked="checked" type="checkbox"> <span class="label">
+									Linebreak styles</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreComments" type="checkbox"> <span class="label">Comments</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore white space in lines</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceAll" checked="checked" type="checkbox"> <span class="label">
+									All</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceLeading" type="checkbox"> <span class="label">
+									Leading</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceTrailing" type="checkbox"> <span class="label">
+									Trailing</span>
+								</div>
+								<div class="checkbox">
+									<input id="optIgnoreWhitespaceChanges" type="checkbox"> <span class="label">
+									Changes in amount</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore lines</legend>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="optIgnoreAllBlankLines" checked="checked" type="checkbox"> <span class="label">
+									All blank lines</span>
+								</div>
+								<div class="checkbox" style="width:300px;">
+									<input disabled="disabled" id="optIgnoreBlankEnd" type="checkbox"> <span class="label">
+									Blank lines at the end of a file</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Lines matching regular expression</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<input disabled="disabled" id="optIgnoreLinesMatching" class="ignoreOptionsBox regExp" autocomplete="on" type="text"> 
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Line ranges</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip" style="width: 300px">Use a 
+comma-separated list of inclusive ranges, each of which is either a 
+number or a pair of dash-separated numbers. Numbers in square brackets 
+count from the end of the file. Examples: 1-6 or 1-6,12,20-[6],[1].</span>
+									<input disabled="disabled" id="optIgnoreLineRanges" class="ignoreOptionsBox range" type="text">
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div id="ignoreLinesStatus" class="checkbox long regExpStatus">
+									<span class="regExpStatusText"></span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Ignore parts of each line</legend>
+							<div class="checkboxes">
+								<div class="checkbox long">
+									<span class="label">Parts matching regular expression</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<input disabled="disabled" id="optIgnorePartsMatching" class="ignoreOptionsBox regExp" type="text"> 
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Column ranges</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip" style="width: 300px; margin-top: -50px">Use
+ a comma-separated list of ranges, following the rules for defining 
+ranges of ignored lines above. Numbers in square brackets count from the
+ end of the line. Examples: 1-6 or 1-6,12,20-[6],[1].</span>
+									<input disabled="disabled" id="optIgnoreColumnRanges" class="ignoreOptionsBox range" type="text">
+									<img class="tooltip-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+								<div id="ignorePartsStatus" class="checkbox long regExpStatus">
+									<span class="regExpStatusText"></span>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div id="tabsOptions-results">
+						<fieldset>
+							<legend>Results</legend>
+							<div class="checkboxes">
+								<div class="checkbox long">
+									<input id="optHorzSplit" type="checkbox"> <span class="label">Split results horizontally</span>
+								</div>
+								<div class="checkbox long">
+									<input id="optShowOnlyDiffs" type="checkbox"> <span class="label">Show only differences</span>
+								</div>
+								<div class="checkbox long">
+									<input id="optShowLineInspector" checked="checked" type="checkbox"> <span class="label">Show line inspector</span>
+								</div>
+								<div class="checkbox long">
+									<span class="label">Line Count Limit (0 for unlimited)</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>&nbsp;
+									<input disabled="disabled" id="optLineCountLimit" value="10000" type="text">
+									<img class="tooltip_help" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/help_light.png" alt="Help">
+									<span class="tooltip">This feature helps limit diff report 
+sizes, as most modern browsers cannot handle incredibly large reports. 
+Note that you can drastically reduce report size by selecting 'Show only
+ differences' on this page.</span>
+									<img class="tooltip-error line-count-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Word Wrap</legend>
+							<div class="checkboxes">
+								<div class="checkbox wordwrap">
+									<input disabled="disabled" id="optEnableWordWrap" type="checkbox"> <span class="label">Enable Word Wrap</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>
+								</div>
+								<div class="checkbox wordwrap">
+									<span class="label">Wrap Width</span> <span class="premiumFeature">*</span><span style="display: none;" class="premiumFeatureSpace"></span>&nbsp;
+									<input disabled="disabled" id="optWordWrapWidth" value="80" type="text">
+									<img class="tooltip-error word-wrap-error" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/tooltip_red.png" alt="Error">
+									<span class="tooltip-error-text"></span>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div id="tabsOptions-colors">
+						<table id="colorsTable">
+							<tbody><tr>
+								<td></td>
+								<td class="heading">Text color</td>
+								<td class="heading">Background color</td>
+								<td class="heading underline">Underline</td>
+								<td class="heading strikethrough">Strikethrough</td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For file and archive comparison</td>
+							</tr>
+							<tr id="identicalItems">
+								<td class="label">Identical items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(255, 255, 255); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="addedItems">
+								<td class="label">Added items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(128, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(192, 192, 192); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="deletedItems">
+								<td class="label">Deleted items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 0, 255); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(224, 224, 224); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="changedItems">
+								<td class="label">Changed items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(64, 32, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(242, 242, 198); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For file comparison only</td>
+							</tr>
+							<tr id="changedTextInChangedLines">
+								<td class="label">Changed text in changed lines:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(255, 15, 135); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(224, 224, 224); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="ignoredText">
+								<td class="label">Ignored text:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(0, 128, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(240, 240, 240); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr>
+								<td class="group" colspan="5">For archive comparison only</td>
+							</tr>
+							<tr id="newerItems">
+								<td class="label">Newer items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(128, 0, 128); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(166, 202, 240); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+							<tr id="olderItems">
+								<td class="label">Older items:</td>
+								<td><div class="colorSelector textColor"><div style="background-color: rgb(255, 0, 0); "></div></div></td>
+								<td><div class="colorSelector bgColor"><div style="background-color: rgb(192, 220, 192); "></div></div></td>
+								<td><input class="underline" type="checkbox"></td>
+								<td><input class="strikethrough" type="checkbox"></td>
+							</tr>
+						</tbody></table>
+					</div>
+					<button id="rememberButton" type="submit" style="display: none"></button>
+				</form>
+			</div></div>
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+	</div>
+
+	<div style="display: none;" id="userDropdown" class="dropdown-menu has-tip anchor-right">
+		<ul>
+			<li><a id="changePswdLink">Change Password</a></li>
+			<li style="display: none;" id="cancelPremiumListItem"><a id="cancelPremiumLink">Manage Premium Subscription</a></li>
+			<li><a id="logoutLink">Log Out</a></li>
+		</ul>
+	</div>
+
+	<!-- Libraries that we can defer loading for -->
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/jquery_002.js"></script>
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/jquery_003.js"></script>
+
+	<!-- Social -->
+	<script type="text/javascript" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/all.js"></script>
+
+	<!-- Feedback -->
+	<script type="text/javascript">
+		var uvOptions = {};
+		(function() {
+			var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+			uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/TytbtbWpquetlWuQU3E5Q.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+		})();
+	</script>
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-363598-3']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackPageLoadTime']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var clicky_site_ids = clicky_site_ids || [];
+		clicky_site_ids.push(66452383);
+		(function() {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = '//static.getclicky.com/js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+		})();
+	</script>
+
+
+
+<div style="display: none;" id="tooltip"><h3></h3><div class="body"></div><div class="url"></div></div><ul style="z-index: 1; display: none;" tabindex="0" id="ui-id-5" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul><ul style="z-index: 1; display: none;" tabindex="0" id="ui-id-6" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul><div aria-labelledby="ui-id-7" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-7">DiffNow: Online Comparison Tool</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogAbout" class="dialog ui-dialog-content ui-widget-content">
+			<p>DiffNow lets you compare text files, documents, binary files, and archives up to 2048 KB (8192 KB for premium users)
+				in size. You can either upload the files you wish to compare or enter their
+				URLs. Results are returned as an interactive HTML report.</p>
+			<p>DiffNow is powered by <a href="http://www.prestosoft.com/edp_examdiffpro.asp" target="_blank">
+				ExamDiff Pro</a> and uses all of the comparison plug-ins in the ExamDiff Pro <a href="http://www.prestosoft.com/edp_plugins.asp" target="_blank">
+				plug-in library</a>.</p>
+			<p>All uploaded files are deleted immediately after comparison.</p>
+		</div></div><div aria-labelledby="ui-id-8" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-8">Share this Report</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogShare" class="dialog ui-dialog-content ui-widget-content">
+			<div id="shareForm">
+				<p>Click the button below to store this comparison report on our servers and receive
+					a permalink, so you can share it with colleagues. If you are logged in, you are able
+					to view all of your reports by using the <b>Saved Reports</b> command.</p>
+
+				<p id="reportTitleInputControl" class="alignCenter">
+					<label for="reportTitleInput">Report title: </label>
+					<input id="reportTitleInput" name="title">
+				</p>
+					
+				<p class="alignCenter">Store for:
+					<select id="shareDuration">
+						<option value="hour">1 hour</option>
+						<option value="day">1 day</option>
+						<option value="week" selected="selected">1 week</option>
+						<option value="month">1 month</option>
+						<option value="year">1 year</option>
+					</select>
+				</p>
+
+				<div class="alignCenter">
+					<a aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="shareConfirmButton"><span class="ui-button-text">Share</span></a>
+				</div>
+			</div>
+
+			<div id="shareProgress" style="display: none;">
+				<img src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/loading.gif" alt="Loading...">
+				<p>Storing ...</p>
+			</div>
+
+			<div id="shareResult" style="display: none;">
+				<p>Your comparison report will be stored <span id="shareDurationText"></span>. Your unique report URL is:</p>
+				<p id="shareUrl"></p>
+			</div>
+		</div></div><div aria-labelledby="ui-id-10" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-10">Word Wrap Warning</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogWordWrapIgnoreError" class="dialog ui-dialog-content ui-widget-content">
+			<p>The Word Wrap feature cannot be used together with Ignore... 
+options that use regular expressions to ignore line parts (Ignore Parts 
+of Each Line and Ignore Comments). Do you want to force Word Wrap and 
+disable these Ignore... options, or to keep the Ignore... options, and 
+cancel the Word Wrap operation?</p>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Force Word Wrap</span></button><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Keep Ignore Options</span></button></div></div></div><div aria-labelledby="ui-id-14" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-14">Your Saved Reports</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div style="max-height: 400px;" id="dialogSavedReports" class="dialog ui-dialog-content ui-widget-content">
+			<div id="savedReports"></div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-15" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-15">Change Your Account Password</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogChangePswd" class="dialog ui-dialog-content ui-widget-content">
+			<div id="changePswdResponse" class="formResponse ui-helper-hidden"></div>
+
+			<form id="changePswdForm" class="cmxform" method="post" action="">
+				<fieldset>
+				<p>
+					<label for="changePswd_current_pswd">Current password</label>
+					<input id="changePswd_current_pswd" name="current_pswd" class="required" type="password">
+				</p>
+				<p>
+					<label for="changePswd_new_pswd">New password</label>
+					<input id="changePswd_new_pswd" name="new_pswd" class="required" type="password">
+				</p>
+				<p>
+					<label for="changePswd_new_pswd_confirm">Confirm new password</label>
+					<input id="changePswd_new_pswd_confirm" name="new_pswd_confirm" class="required" type="password">
+				</p>
+				</fieldset>
+			</form>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="changePswdSubmitButton" type="button"><span class="ui-button-text">Change Password</span></button></div></div></div><div aria-labelledby="ui-id-16" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-16">Change Your Account Password</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogChangePswdForReset" class="dialog ui-dialog-content ui-widget-content">
+			<div id="changePswdForResetResponse" class="formResponse ui-helper-hidden"></div>
+
+			Please choose a new password for your DiffNow account.
+			<form id="changePswdForResetForm" class="cmxform" method="post" action="">
+				<fieldset>
+				<p>
+					<label for="changePswdForReset_new_pswd">New password</label>
+					<input id="changePswdForReset_new_pswd" name="new_pswd" class="required" type="password">
+				</p>
+				<p>
+					<label for="changePswdForReset_new_pswd_confirm">Confirm new password</label>
+					<input id="changePswdForReset_new_pswd_confirm" name="new_pswd_confirm" class="required" type="password">
+				</p>
+				<input id="changePswdForReset_email" type="hidden">
+				<input id="changePswdForReset_confirmation_key" type="hidden">
+				</fieldset>
+			</form>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="changePswdForResetSubmitButton" type="button"><span class="ui-button-text">Change Password</span></button></div></div></div><div aria-labelledby="ui-id-17" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-17">Forgot Your Password?</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogPasswordReset" class="dialog ui-dialog-content ui-widget-content">
+			<div id="passwordResetResponse" class="formResponse ui-helper-hidden"></div>
+
+			Enter your email address, and your new password will be sent to you.
+			<form id="passwordResetForm" class="cmxform" method="post" action="">
+				<fieldset>
+				<p>
+					<input id="password_reset_email" name="email" class="required email wide">
+				</p>
+				</fieldset>
+			</form>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="passwordResetSubmitButton" type="button"><span class="ui-button-text">Reset Password</span></button></div></div></div><div aria-labelledby="ui-id-18" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-18">Register for a DiffNow Account</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogRegister" class="dialog ui-dialog-content ui-widget-content">
+			<div id="registerResponse" class="formResponse ui-helper-hidden"></div>
+
+			<form id="registerForm" class="cmxform" method="post" action="">
+				<p>With a free DiffNow account, you can store your comparison 
+options and keep track of your saved reports, as well as getting access 
+to bonus features.</p>
+				<fieldset>
+				<p>
+					<label for="register_email">Email address</label>
+					<input id="register_email" name="email" class="required email">
+				</p>
+				<p>
+					<label for="register_pswd">Password</label>
+					<input id="register_pswd" name="password" class="required" type="password">
+				</p>
+				<p>
+					<label for="register_pswd_confirm">Confirm password</label>
+					<input id="register_pswd_confirm" name="password_confirm" class="required" type="password">
+				</p>
+				</fieldset>
+			</form>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="registerSubmitButton" type="button"><span class="ui-button-text">Register</span></button></div></div></div><div aria-labelledby="ui-id-19" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-19">Register for a DiffNow Account</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogRegisterEmailSent" class="dialog ui-dialog-content ui-widget-content">
+			<div id="registerEmailSentResponse" class="formResponse"></div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-20" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-20">DiffNow Account Activation</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogRegisterConfirm" class="dialog ui-dialog-content ui-widget-content">
+			<p id="registerConfirmResponse"></p>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-21" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-21">Change Your Account Password</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogChangePswdConfirmed" class="dialog ui-dialog-content ui-widget-content">
+			<div id="changePswdConfirmedResponse" class="formResponse"></div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-22" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-22">Forgot Your Password?</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogPasswordResetEmailSent" class="dialog ui-dialog-content ui-widget-content">
+			<div id="passwordResetEmailSentResponse" class="formResponse"></div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-23" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-23">Why Register?</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogWhyRegister" class="dialog ui-dialog-content ui-widget-content">
+			<p>If you use DiffNow regularly, registering for an account can be useful for several reasons:</p>
+			<ul>
+				<li>Your options are tied to your account, so you only have to change them once rather than every time you visit DiffNow.</li>
+				<li>All of your shared diff reports can be viewed in a <b>Saved Reports</b> dialog, so you don't have to worry about losing the report URLs.</li>
+				<li>You can also title your diff reports when you save them, for more convenient organization.</li>
+			</ul>
+			<p>Registration only takes a minute and is of course perfectly free. 
+We are also planning on adding more features to user accounts in the 
+future, such as more advanced comparison options. Be sure to let us know
+ if you have any feature suggestions using the Feedback link on the left
+ side.</p>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-24" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-24">Go Premium</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogGoPremium" class="dialog ui-dialog-content ui-widget-content">
+			<div id="goPremiumResponse" class="formResponse ui-helper-hidden"></div>
+
+			<div id="whyPremiumTitle">Feature Comparison</div>
+			<table id="whyPremiumTable">
+				<thead>
+					<tr>
+						<th class="whyPremiumStandardBackground">Feature</th>
+						<th class="whyPremiumStandardBackground">DiffNow Standard</th>
+						<th id="whyPremiumPremiumBackground">DiffNow Premium</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Price</td>
+						<td>Free</td>
+						<td>$19.99/yr</td>
+					</tr>
+					<tr>
+						<td>Unlimited Comparisons</td>
+						<td>Yes</td>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<td>Savable HTML Reports</td>
+						<td>Yes, up to 1 year</td>
+						<td>Yes, unlimited</td>
+					</tr>
+					<tr>
+						<td>Ads</td>
+						<td>Yes</td>
+						<td>None</td>
+					</tr>
+					<tr>
+						<td>File Size Limit</td>
+						<td>2 MB</td>
+						<td>8 MB</td>
+					</tr>
+					<tr>
+						<td>Report Line Count Limit</td>
+						<td>10000 lines</td>
+						<td>User-defined</td>
+					</tr>
+					<tr>
+						<td>Word Wrap</td>
+						<td>No</td>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<td>Advanced Ignore Options</td>
+						<td>No</td>
+						<td>Yes</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="whyPremiumPayContainer">
+				<img id="goPremiumPurchase" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/buy_with_stripe.png" alt="Pay with Credit Card via Stripe">
+			</div>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-25" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-25">Please Login or Register</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogMustLogin" class="dialog ui-dialog-content ui-widget-content">
+			You must be logged in to get DiffNow Premium. Please login or register in the top bar.
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Close</span></button></div></div></div><div aria-labelledby="ui-id-26" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-26">Cancel Confirmation</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogConfirmCancelPremium" class="dialog ui-dialog-content ui-widget-content">
+			<p>Are you sure you want to cancel your DiffNow Premmium subscription? You can always reactivate your premium subscription in <b>Manage Premium Subscription</b> dialog up until the expiration of your subscription.</p>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="confirmCancelPremiumSubmitButton" type="button"><span class="ui-button-text">Cancel Premium</span></button></div></div></div><div aria-labelledby="ui-id-27" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-27">Manage your DiffNow Premium Subscription</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogCancelPremium" class="dialog ui-dialog-content ui-widget-content">
+			<p>Cancelling your DiffNow subscription will stop recurring yearly 
+payments for DiffNow premium. Your current subscription will last until 
+the expiration date:&nbsp;<b id="premiumExpirationDate"></b> </p>
+			<b id="premiumCancelled">Your subscription has already been cancelled</b>
+		</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" id="cancelPremiumSubmitButton" type="button"><span class="ui-button-text">Cancel Premium</span></button><button aria-disabled="true" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-disabled ui-state-disabled ui-button-text-only" disabled="disabled" id="reactivatePremiumSubmitButton" type="button"><span class="ui-button-text">Reactivate Premium</span></button></div></div></div><div aria-labelledby="ui-id-28" role="dialog" tabindex="-1" style="display: none; outline: 0px none; z-index: 1000;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-28">Terms of Service</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogTermsOfService" class="dialog ui-dialog-content ui-widget-content">
+			At <a href="http://www.prestosoft.com/" target="_blank">PrestoSoft LLC</a> we value
+			and protect your privacy. These Terms of Service explain how we collect, use, and protect
+			information collected from users (each, a "User") of the 
+			<a href="https://www.diffnow.com/">www.diffnow.com</a> website ("Site").<br><br>
+
+			<b>How we use uploaded files</b><br><br>
+
+			As part of comparison, User may upload files to the Site. We delete
+			all uploaded files from the Site during file comparison or, if no comparison is
+			subsequently performed, at the end of the browsing session. Comparison results
+			are deleted from the Site at the end of the browsing session.<br><br>
+
+			We collect only the following information for quality assurance
+			purposes: the names of the files or URLs compared by User and whether and when
+			any errors occurred during comparison.<br><br>
+
+			The User shall not upload files of a sensitive nature as part of User's
+			interaction with the Site.<br><br>
+
+			<b>How we use your email address</b><br><br>
+
+			We may use your email address to send anouncements about new DiffNow features. 
+			We will not pass or sell your email address to third parties.<br><br>
+
+			<b>Web browser cookies</b><br><br>
+
+			Our Site may use "cookies" to enhance User experience. User's web browser places
+			cookies on their hard drive for record-keeping purposes and sometimes to track
+			information about them. User may choose to set their web browser to refuse
+			cookies, or to alert you when cookies are being sent. If they do so, note that
+			some parts of the Site may not function properly.<br><br>
+
+			<b>How we protect your information</b><br><br>
+
+			We adopt appropriate data collection, storage and processing practices and
+			security measures to protect against unauthorized access, alteration, disclosure
+			or destruction of your personal information, username, password, transaction
+			information and data stored on our Site.<br><br>
+
+			<b>Sharing your personal information</b><br><br>
+
+			We do not sell, trade, or rent User's personal identification information to
+			others.<br><br>
+
+			<b>Changes to these terms of service</b><br><br>
+
+			We have the discretion to update these terms of service at any time. We
+			encourage Users to frequently check this page for any changes to stay informed
+			about how we are helping to protect the personal information we collect. You
+			acknowledge and agree that it is your responsibility to review this privacy
+			policy periodically and become aware of modifications.<br><br>
+
+			<b>Your acceptance of these terms</b><br><br>
+
+			By using this Site, you signify your acceptance of this policy. If you do not
+			agree to this policy, please do not use our Site. Your continued use of the Site
+			following the posting of changes to this policy will be deemed your acceptance
+			of those changes.<br><br>
+
+			<b>Contacting us</b><br><br>
+
+			If you have any questions about these Terms of Service, please contact us at:<br><br>
+			<a href="http://www.prestosoft.com/" target="_blank">PrestoSoft LLC</a><br>
+			P.O. Box 3611<br>
+			Thousand Oaks, CA 91359<br>
+			(877) 392-6343<br>
+			diffnow@prestosoft.com<br>
+			<br>
+			This document was last updated in 2015.
+		</div></div><iframe class="stripe_checkout_app" name="stripe_checkout_app" src="DiffNow%20-%20Compare%20files%20online.%20Powered%20by%20ExamDiff%20Pro_files/var-lcxYbQi90a337mQZ3dcdzg.htm" style="z-index: 9999; display: none; background: rgba(0, 0, 0, 0.004) none repeat scroll 0% 0%; border: 0px none transparent; overflow-x: hidden; overflow-y: auto; visibility: visible; margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;" allowtransparency="true" frameborder="0"></iframe><div style="display: block;" title="Back To Top" id="__scrollToTop"><div id="__scroll__scroll"><span class="__scroll__arrow">▲</span></div><div id="__scroll__util"><span name="__hide" title="Hide the Button">x</span><span name="__bottom" title="Scroll to the bottom">▼</span></div></div></body></html>
